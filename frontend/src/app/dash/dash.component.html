@@ -1,0 +1,29 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title" routerLink="">Logo</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <span class="mdl-navigation__link" routerLink="/dash/dashboard">Dashboard</span>
+                <span class="mdl-navigation__link" routerLink="/dash/load-sheet">Explore Data</span>
+                <span class="mdl-navigation__link" routerLink="/dash/account">Account</span>
+            </nav>
+        </div>
+    </header>
+    <!-- drawer -->
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title" routerLink="">
+            Logo
+        </span>
+        <nav class="mdl-navigation">
+            <span class="mdl-navigation__link" routerLink="/dash/dashboard">Dashboard</span>
+            <span class="mdl-navigation__link" routerLink="/dash/load-sheet">Explore Data</span>
+            <span class="mdl-navigation__link" routerLink="/dash/account">Account</span>
+            <span class="mdl-navigation__link" >Sign out</span>
+        </nav>
+    </div>
+<!-- main -->
+    <main class="mdl-layout__content">
+        <router-outlet></router-outlet>
+    </main>
+</div>

@@ -1,0 +1,22 @@
+<div class="main-container">
+    <div class="mdl_card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+            Login here
+        </div>
+        <div class="form login-form">
+            <div class="form-component mdl-js-textfield mdl-textfield mdl-textfield--floating-label">
+                <label class="mdl-textfield__label" for="email">Enter Email</label>
+                <input class="mdl-textfield__input" type="text" name="email" id="email">
+            </div>
+            <div class="form-component mdl-js-textfield mdl-textfield mdl-textfield--floating-label">
+                <label class="mdl-textfield__label" for="password">Enter Password</label>
+                <input class="mdl-textfield__input" type="text" name="password" id="password">
+            </div>
+            <div class="form-multi-link-copmonent">
+                <div class="form-link-componet" [routerLink]="['/auth', 'signup']">Signup</div>
+                <div class="form-link-componet" routerLink="/auth/forgot-password">Forgot Password</div>
+            </div>
+            <div class="form-button"><button class="mdl-button mdl-button--raised mdl-button--accent">Login</button></div>
+        </div>
+    </div>
+</div>
